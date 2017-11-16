@@ -1,0 +1,32 @@
+{
+  "options": {
+    "paths": {
+      "root": "/root/tileserver",
+      "fonts": "fonts",
+      "styles": "styles",
+      "mbtiles": "data"
+    },
+    "domains": [
+      "发布的网址：端口号"
+    ],
+    "maxSize": 2048,
+    "pbfAlias": "pbf",
+    "serveAllFonts": false
+  },
+  "styles": {
+  	
+    "xxxxx":{
+  		"style":"xxxxx.json",
+      "tilejson":{
+        "type":"overlay"
+      }
+    }
+
+  },
+  "data": {
+    "xxxxx": {
+      "mbtiles": "xxxxx.mbtiles"
+    }
+
+  }
+}

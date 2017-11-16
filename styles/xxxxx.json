@@ -1,0 +1,462 @@
+{
+  "version": 8,
+  "name": "北京",
+  "metadata": {
+    "mapbox:autocomposite": true,
+    "mapbox:type": "default"
+  },
+  "center":[
+    116.29,
+    40.16
+  ],
+  "zoom":7.82,
+  "bearing":0,
+  "pitch":0,
+  "sprite":"./styles/sprite",
+  "glyphs": "./fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "beijing": {
+      "type": "vector",
+      "tiles": [
+        "http://发布的网址/data/xxxxx/{z}/{x}/{y}.pbf"
+      ],
+      "minZoom": 0,
+      "maxZoom": 14
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgb(4,7,14)"
+      }
+    },
+    {
+      "id": "bj_water_R-copy",
+      "type": "fill",
+      "source": "beijing",
+      "source-layer": "water_Rgeojson",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(41, 49, 74, 1)",
+        "fill-outline-color":"rgba(255, 0, 0, 0)"
+      }
+    },
+    {
+      "id": "bj_boundary_city_R",
+      "type": "fill",
+      "source": "beijing",
+      "source-layer": "boundary_city_Rgeojson",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(25, 30, 46, 1)"
+      }
+    },
+    {
+      "id": "bj_water_R",
+      "type": "fill",
+      "source": "beijing",
+      "source-layer": "water_Rgeojson",
+      "minzoom": 12,
+      "maxzoom": 18,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(73, 136, 173, 0.44)",
+        "fill-outline-color":"rgba(255, 0, 0, 0)"
+      }
+    },
+    {
+      "id": "bj_vegetation_park_R-copy",
+      "type": "fill",
+      "source": "beijing",
+      "source-layer": "vegetation_park_Rgeojson",
+      "minzoom": 6,
+      "maxzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(18, 22, 35, 1)"
+      }
+    },
+    {
+      "id": "bj_vegetation_park_R",
+      "type": "fill",
+      "source": "beijing",
+      "source-layer": "vegetation_park_Rgeojson",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(18, 22, 41, 1)"
+      }
+    },
+    {
+      "id": "bj_road_frame",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_frame_Lgeojson",
+      "minzoom": 6,
+      "maxzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(48, 52, 68, 1)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "bj_road_kuaisu-copy",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_kuaisu_Lgeojson",
+      "minzoom": 11,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "bj_road_kuaisu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_kuaisu_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 3.5
+      }
+    },
+    {
+      "id": "bj_road_gaosu-copy",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_gaosu_Lgeojson",
+      "minzoom": 11,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "bj_road_gaosu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_gaosu_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 5
+      }
+    },
+    {
+      "id": "bj_road_guodao-copy",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_guodao_Lgeojson",
+      "minzoom": 12,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "bj_road_guodao",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_guodao_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 1)",
+        "line-width": 5
+      }
+    },
+    {
+      "id": "bj_road_shengdao-copy",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_shengdao_Lgeojson",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 2,
+        "line-color": "rgba(50, 55, 72, 1)"
+      }
+    },
+    {
+      "id": "bj_road_shengdao",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_shengdao_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 8,
+        "line-color": "rgba(50, 55, 72, 1)"
+      }
+    },
+    {
+      "id": "bj_road_xiandao-copy",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_xiandao_Lgeojson",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.87)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "bj_road_xiandao",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_xiandao_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.89)",
+        "line-width": 6
+      }
+    },
+    {
+      "id": "bj_road_jiujilu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_jiujilu_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 2,
+        "line-color": "rgba(50, 55, 72, 0.81)"
+      }
+    },
+    {
+      "id": "bj_road_xiangzhendaolu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_xiangzhencundao_Lgeojson",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.83)",
+        "line-width": 1.5
+      }
+    },
+    {
+      "id": "bj_road_xiangzhencundao",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_xiangzhencundao2_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.85)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "bj_road_qitadaolu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_qitadaolu_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.84)"
+      }
+    },
+    {
+      "id": "bj_road_qitadaolu2",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_qitadaolu2_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.84)",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "bj_road_xingrendaolu",
+      "type": "line",
+      "source": "beijing",
+      "source-layer": "road_xingrendaolu_Lgeojson",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(50, 55, 72, 0.84)"
+      }
+    },
+    {
+      "id": "building_R-copy",
+      "type": "fill-extrusion",
+      "source": "beijing",
+      "source-layer": "building_Rgeojson",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-extrusion-color": "rgba(50, 55, 72, 0.58)",
+        "fill-extrusion-height": 50
+      }
+    },
+    {
+      "id": "building_R",
+      "type": "fill-extrusion",
+      "source": "beijing",
+      "source-layer": "building_Rgeojson",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-extrusion-color": "rgba(72, 76, 88, 1)",
+        "fill-extrusion-height": 80
+      }
+    },
+    {
+      "id": "bj_landmark1",
+      "type": "symbol",
+      "source": "beijing",
+      "source-layer": "landmark1geojson",
+      "minzoom": 8,
+      "maxzoom": 24,
+      "layout": {
+        "text-field": "{标签名}",
+        "visibility": "visible",
+        "icon-image": "circle-12",
+        "text-anchor": "bottom-left"
+      },
+      "paint": {
+        "text-color": "rgba(255, 247, 238, 1)"
+      }
+    },
+    {
+      "id": "bj_landmark2",
+      "type": "symbol",
+      "source": "beijing",
+      "source-layer": "landmark2geojson",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {
+        "text-field": "{标签名}",
+        "visibility": "visible",
+        "icon-image": "circle-12",
+        "text-anchor": "bottom-left"
+      },
+      "paint": {
+        "text-color": "rgba(255, 247, 238, 1)"
+      }
+    },
+    {
+      "id": "bj_landmark3",
+      "type": "symbol",
+      "source": "beijing",
+      "source-layer": "landmark3geojson",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {
+        "text-field": "{标签名}",
+        "visibility": "visible",
+        "text-anchor": "bottom-left",
+        "icon-image": "circle-12"
+      },
+      "paint": {
+        "text-color": "rgba(255, 247, 238, 1)"
+      }
+    },
+    {
+      "id": "bj_landmark_bts",
+      "type": "symbol",
+      "source": "beijing",
+      "source-layer": "landmark4geojson",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {
+        "text-field": "{NAME}",
+        "visibility": "visible",
+        "icon-image": "circle-12",
+        "text-anchor": "bottom-left"
+      },
+      "paint": {
+        "text-color": "rgba(255, 247, 238, 1)",
+        "icon-translate-anchor": "viewport"
+      }
+    }
+  ],
+  "id": "beijing",
+  "owner": ""
+}
