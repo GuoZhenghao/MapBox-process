@@ -14,4 +14,4 @@
 
 - cofig文件为发布配置
 
-- [具体切图发布流程详见github笔记](https://github.com/GuoZhenghao/Document/blob/master/MapBox/Root.md)
+- [具体切图发布流程详见github笔记](https://github.com/GuoZhenghao/Document/blob/master/Map/MapBox/Root.md)
